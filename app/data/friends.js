@@ -5,10 +5,15 @@ var friends = [
         scores: ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
     },
     {
-        name: "Heel Killers",
-        photo: "https://drive.google.com/open?id=1Z8LtUZtFRoF0Qocswy-Qg2znIP7Oo0rs",
+        name: "Norm",
+        photo: "https://drive.google.com/open?id=1leSwXAIex5ILINxL3HyEj9m23LCq4tOT",
+        scores: ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"]
+    },
+    {
+        name: "Sporty",
+        photo: "https://drive.google.com/open?id=1aXilUwKJoMXRjctO76VVirGbPbmjGPYR",
         scores: ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
-    }
+    } 
     ];
     
     module.exports = friends;
