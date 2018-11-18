@@ -1,5 +1,5 @@
 {
-  "name": "seoul-searcher",
+  "name": "sole-searcher",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ewu2/seoul-searcher.git"
+    "url": "git+https://github.com/ewu2/sole-searcher.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ewu2/seoul-searcher/issues"
+    "url": "https://github.com/ewu2/sole-searcher/issues"
   },
-  "homepage": "https://github.com/ewu2/seoul-searcher#readme",
+  "homepage": "https://github.com/ewu2/sole-searcher#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
