@@ -1,12 +1,12 @@
 var friends = [
     {
-        name: "Low",
-        photo: "http://webneel.com/daily/sites/default/files/images/daily/07-2015/18-beautiful-peacock-picture.jpg",
+        name: "Floppers",
+        photo: "https://drive.google.com/open?id=1kpN8gIs9NbU0Q31c4micoOiyofYWla_y",
         scores: ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
     },
     {
-        name: "High",
-        photo: "https://pbs.twimg.com/profile_images/660946436801101824/niM7azZS.jpg",
+        name: "Heel Killers",
+        photo: "https://drive.google.com/open?id=1Z8LtUZtFRoF0Qocswy-Qg2znIP7Oo0rs",
         scores: ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5"]
     }
     ];

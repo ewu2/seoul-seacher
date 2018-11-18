@@ -11,31 +11,31 @@ module.exports = function(app) {
 		var user = req.body;
 		var userScores = user.scores;
 
-				var bestMatch = friends[0];
-				var bestScore = 100;
-				var compScore = 0;
+				var soleMate = friends[0];
+				var highestScore = 100;
+				var compatibleScore = 0;
 
 				for (var i in friends) {
 					for (var j = 0; j <10; j++) {
-						compScore += Math.abs(parseInt(friends[i].scores[j]) - parseInt(userScores[j]));
-						console.log(compScore);
+						compatibleScore += Math.abs(parseInt(friends[i].scores[j]) - parseInt(userScores[j]));
+						console.log(compatibleScore);
 					}
-					if ((bestScore > compScore) && (user.name != friends[i].name)) {
-						bestMatch = friends[i];
-						bestScore = compScore;
+					if ((highestScore > compatibleScore) && (user.name != friends[i].name)) {
+						soleMate = friends[i];
+						highestScore = compatibleScore;
 					}
-					compScore = 0;
+					compatibleScore = 0;
 				}
-		var nameFlag = true;
+		var flag = true;
 		for (var i = 0; i < friends.length; i++) {
 			if (user.name == friends[i].name) {
-				nameFlag = false;
+				flag = false;
 			}
 		}
-		if (nameFlag) {
+		if (flag) {
 			friends.push(req.body);
 		}
-		res.json(bestMatch);
+		res.json(soleMate);
 	});
 
 }

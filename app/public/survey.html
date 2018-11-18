@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Friend Finder</title>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Sole Searcher</title>
 
-	 <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Link to Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
 
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		<!-- Links to Javascript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
+		<script type="text/javascript" src="../routing/apiRoutes.js"></script>
 
-	<!-- Added link to CSS Style-->
-    <!--<link rel="stylesheet" type="text/css" href="../style.css">-->
+		<script type="text/javascript" src="../routing/htmlRoutes.js"></script>
 
-    <!-- Added link to Javascript-->
-	<!--<script type="text/javascript" src="../routing/apiRoutes.js"></script>
+		<script type="text/javascript" src="../server.js"></script>
 
-	<script type="text/javascript" src="../routing/htmlRoutes.js"></script>
+		<script type="text/javascript" src="../data/friends.js"></script>
 
-	<script type="text/javascript" src="../server.js"></script>
-
-	<script type="text/javascript" src="../data/friends.js"></script>-->
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
-
+		<!-- Added link to Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+		crossorigin="anonymous">
 </head>
 <body>
 	
@@ -37,44 +34,24 @@
 		
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Survey Questions</h2>
+				<h2>Sole Searching Survey</h2>
 				<hr>
-				<h2>About You</h2>
+				<h2>Your personal "feet"-tures: </h2>
 				<form id="survey">
 					<div class="form-group">
-						<label for="Name">Name (Required)</label>
+						<label for="Name">Name: </label>
 						<input type="text" class="form-control" id="name" aria-describedby="nameField" placeholder="" required=""></input>
 					</div>
 					<div class="form-group">
-						<label for="Image">Link to Photo Image (Required)</label>
+						<label for="Image">Link to image of footwear that best represents YOU:</label>
 						<input type="url" class="form-control" id="image" aria-describedby="imageField" placeholder="" required=""></input>
 					</div>
+					<br>
 					<hr>
-					<!--<select id="q1" class="chosen-select" data-placeholder="" style="display: none;"">
-						<option value=""></option>
-						<option value="1">1 (Strongly Disagree</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5 (Strongly Agree)</option>
-					</select>
-					<div id="q1_chosen" class="chosen-container chosen-container-single" style="width: 165px;" title="">
-						<a class="chosen-single chosen-default">
-							<span>Select an Option</span>
-							<div>
-								<b></b>
-							</div>
-						</a>
-						<div class="chosen-drop>">
-							<div class="chosen-search">
-								<input autocomplete="off" type="text">
-							</div>
-							<ul class="chosen-results">
-							</ul>
-						</div>
-					</div>-->
+					<h3>Try to respond to these statements with your best foot forward: </h3>
+					<br>
 					<div class="form-group">
-						<label for="question1"><h3>Question 1</h3><p>It is okay to answer your cell phone when you are out with a friend</p></label>
+						<label for="question1"><p>1. You own at least one pair of fuzzy socks.</p></label>
 					    <select class="form-control" id="question1" style="width: 180px;">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -85,7 +62,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question2"><h3>Question 2</h3><p>You need to be the one to decide what activity you/your group should do</p></label>
+						<label for="question2"><p>2. When indoors, you like to wear slippers.</p></label>
 					    <select class="form-control" id="question2" style="width: 180px;">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -96,7 +73,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question3"><h3>Question 3</h3><p>You enjoy doing active outdoor activities</p></label>
+						<label for="question3"><p>3. You wear athletic footwear most of the time.</p></label>
 					    <select class="form-control" id="question3" style="width: 180px;">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -107,7 +84,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question4"><h3>Question 4</h3><p>You enjoy quiet indoor activities</p></label>
+						<label for="question4"><p>4. When buying new shoes, you put style over comfort.</p></label>
 					    <select class="form-control" id="question4">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -118,7 +95,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question5"><h3>Question 5</h3><p>You like to discuss politics and/or religion</p></label>
+						<label for="question5"><p>5. You own more ankle socks than long socks.</p></label>
 					    <select class="form-control" id="question5">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -129,7 +106,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question6"><h3>Question 6</h3><p>You like to ask questions to your friends</p></label>
+						<label for="question6"><p>6. You'd rather purchase brand-name shoes than knock-off versions.</p></label>
 					    <select class="form-control" id="question6">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -140,7 +117,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question7"><h3>Question 7</h3><p>You like to answer questions from your friends</p></label>
+						<label for="question7"><p>7. You prefer velcro over shoelaces.</p></label>
 					    <select class="form-control" id="question7">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -151,7 +128,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question8"><h3>Question 8</h3><p>You like to drink socially</p></label>
+						<label for="question8"><p>8. You like hiking.</p></label>
 					    <select class="form-control" id="question8">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -162,7 +139,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question9"><h3>Question 9</h3><p>You are okay with a friend that smokes</p></label>
+						<label for="question9"><p>9. You prefer flip-flops over sandals.</p></label>
 					    <select class="form-control" id="question9">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -173,7 +150,7 @@
 					    </select>
 					</div>
 					<div class="form-group">
-						<label for="question10"><h3>Question 10</h3><p>You like to make plans only on the weekend</p></label>
+						<label for="question10"><p>10. Your the type of person to take off your shoes when you enter a home.</p></label>
 					    <select class="form-control" id="question10">
 					      <option></option>
 					      <option value="1">1 (Strongly Disagree)</option>
@@ -184,7 +161,7 @@
 					    </select>
 					</div>
 					<br>
-					<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+					<button type="submit" class="btn btn-secondary btn-lg btn-block" id="submit">Submit</button>
 				</form>
 			</div>
 		</div>
@@ -192,7 +169,7 @@
 		<hr>
 		<div class="row">
 			<div class="col-md-12">
-				<a href="/api/friends">API Friends List</a> | <a href="https://github.com/Zacsaltzman/FriendFinder">GitHub Repo</a>
+				<a href="/api/friends">API SoleMate List</a> | <a href="https://github.com/ewu2/sole-searcher">GitHub Repo</a>
 			</div>
 		</div>
 	</div>
@@ -203,15 +180,14 @@
 <div id="resultsModal" class="modal fade in" role="dialog" style="display: none;">
 	  <div class="modal-dialog">
 
-	    <!-- Modal content-->
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">×</button>
-	        <h2 class="modal-title"><strong>Best Match</strong></h2>
+	        <h2 class="modal-title"><strong>Your Cinderella: </strong></h2>
 	      </div>
 	      <div class="modal-body">
-	        <h2 id="matchName">test</h2>
-	        <img id="matchImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Hurricane_Isabel_from_ISS.jpg/300px-Hurricane_Isabel_from_ISS.jpg" alt="">
+	        <h2 id="matchName">test.</h2>
+	        <img id="matchImg" src="https://drive.google.com/open?id=1WFkuXs4J_XSZneN4Ju7eYj9ZpZtZGmLV" alt="">
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
@@ -224,26 +200,12 @@
 <script type="text/javascript">
 	console.log("Page was refreshed");
 
-  	// // Chosen CSS
-   //  var config = {
-   //    '.chosen-select'           : {},
-   //    '.chosen-select-deselect'  : {allow_single_deselect:true},
-   //    '.chosen-select-no-single' : {disable_search_threshold:10},
-   //    '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-   //    '.chosen-select-width'     : {width:"95%"}
-   //  }
-   //  for (var selector in config) {
-   //    $(selector).chosen(config[selector]);
-   //  }
-
-    // Capture the form inputs 
     $("#submit").on("click", function(event){
 
     	event.preventDefault();
 
     	console.log("working");
 
-    	// Form validation
     	function validateForm() {
 		  var isValid = true;
 		  $('.form-control').each(function() {
@@ -254,11 +216,10 @@
 		  return isValid;
 		}
 
-		// If all required fields are filled
+
 		if (validateForm() == true)
 		{
 			console.log("valid");
-			// Create an object for the user's data
 	    	var userData = {
 	    		name: $("#name").val(),
 	    		photo: $("#image").val(),
@@ -267,19 +228,15 @@
 
 	    	console.log(userData);
 
-	    	// Grab the URL of the website
-	    	var currentURL = window.location.origin;
-
-	    	// AJAX post the data to the friends API. 
+				var currentURL = window.location.origin;
+				
 	    	$.post(currentURL + "/api/friends", userData, function(data){
 
-	 //    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 
 	    		$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.photo);
 	    		$('#matchImg').attr("height", 200);
 
-		    	// Show the modal with the best match 
 		    	$("#resultsModal").show();
 
 	    	});
@@ -287,10 +244,9 @@
 		}
 		else
 		{
-			alert("Please fill out all fields before submitting!");
+			alert("Answers for all fields are required.");
 		}
     	
-    	// return false;
     });
 
 $("#close").on("click", function () {
@@ -300,7 +256,6 @@ $("#close").on("click", function () {
 $(".close").on("click", function () {
 	$("#resultsModal").hide();
 });
-
 
   </script>
 
